@@ -1,0 +1,109 @@
+column,segment,split,value,rows,share
+basket_type,single,train,single,3299,1.0
+basket_type,single,validation,single,534,1.0
+basket_type,worst_of,train,worst_of,6508,1.0
+basket_type,worst_of,validation,worst_of,1044,1.0
+duration_bucket,single,train,12-24,891,0.27008184298272203
+duration_bucket,single,train,24-36,917,0.27796301909669596
+duration_bucket,single,train,36-60,787,0.2385571385268263
+duration_bucket,single,train,60+,189,0.057290087905425884
+duration_bucket,single,train,<=12,515,0.1561079114883298
+duration_bucket,single,validation,12-24,123,0.2303370786516854
+duration_bucket,single,validation,24-36,151,0.28277153558052437
+duration_bucket,single,validation,36-60,125,0.2340823970037453
+duration_bucket,single,validation,60+,36,0.06741573033707865
+duration_bucket,single,validation,<=12,99,0.1853932584269663
+duration_bucket,worst_of,train,12-24,986,0.1515058389674247
+duration_bucket,worst_of,train,24-36,1581,0.24293177627535342
+duration_bucket,worst_of,train,36-60,2329,0.35786724031960665
+duration_bucket,worst_of,train,60+,1508,0.23171481253841425
+duration_bucket,worst_of,train,<=12,104,0.015980331899200985
+duration_bucket,worst_of,validation,12-24,175,0.16762452107279693
+duration_bucket,worst_of,validation,24-36,265,0.25383141762452105
+duration_bucket,worst_of,validation,36-60,369,0.35344827586206895
+duration_bucket,worst_of,validation,60+,220,0.210727969348659
+duration_bucket,worst_of,validation,<=12,15,0.014367816091954023
+observation_frequency,single,train,1 month,112,0.033949681721733856
+observation_frequency,single,train,12M,26,0.007881176113973931
+observation_frequency,single,train,1D,75,0.022734161867232493
+observation_frequency,single,train,1M,792,0.24007274931797515
+observation_frequency,single,train,1Y,211,0.06395877538648075
+observation_frequency,single,train,2M,267,0.08093361624734768
+observation_frequency,single,train,3 months,89,0.026977872082449228
+observation_frequency,single,train,3M,720,0.21824795392543195
+observation_frequency,single,train,6M,478,0.14489239163382844
+observation_frequency,single,train,Annual,17,0.005153076689906032
+observation_frequency,single,train,M,85,0.02576538344953016
+observation_frequency,single,train,Monthly,83,0.025159139133070628
+observation_frequency,single,train,Q,89,0.026977872082449228
+observation_frequency,single,train,Quarterly,73,0.022127917550772962
+observation_frequency,single,train,Y,16,0.004849954531676266
+observation_frequency,single,train,anual,12,0.003637465898757199
+observation_frequency,single,train,mensual,90,0.027280994240678993
+observation_frequency,single,train,trimestral,64,0.019399818126705062
+observation_frequency,single,validation,1 month,9,0.016853932584269662
+observation_frequency,single,validation,12M,2,0.003745318352059925
+observation_frequency,single,validation,1D,13,0.024344569288389514
+observation_frequency,single,validation,1M,135,0.25280898876404495
+observation_frequency,single,validation,1Y,46,0.08614232209737828
+observation_frequency,single,validation,2M,39,0.07303370786516854
+observation_frequency,single,validation,3 months,12,0.02247191011235955
+observation_frequency,single,validation,3M,108,0.20224719101123595
+observation_frequency,single,validation,6M,83,0.15543071161048688
+observation_frequency,single,validation,Annual,9,0.016853932584269662
+observation_frequency,single,validation,M,13,0.024344569288389514
+observation_frequency,single,validation,Monthly,11,0.020599250936329586
+observation_frequency,single,validation,Q,17,0.031835205992509365
+observation_frequency,single,validation,Quarterly,10,0.018726591760299626
+observation_frequency,single,validation,Y,2,0.003745318352059925
+observation_frequency,single,validation,anual,3,0.0056179775280898875
+observation_frequency,single,validation,mensual,10,0.018726591760299626
+observation_frequency,single,validation,trimestral,12,0.02247191011235955
+observation_frequency,worst_of,train,1 month,150,0.023048555623847573
+observation_frequency,worst_of,train,12M,45,0.0069145666871542714
+observation_frequency,worst_of,train,1D,205,0.031499692685925014
+observation_frequency,worst_of,train,1M,1626,0.24984634296250768
+observation_frequency,worst_of,train,1Y,391,0.060079901659496004
+observation_frequency,worst_of,train,2M,505,0.07759680393362016
+observation_frequency,worst_of,train,3 months,150,0.023048555623847573
+observation_frequency,worst_of,train,3M,1303,0.20021511985248924
+observation_frequency,worst_of,train,6M,958,0.14720344191763982
+observation_frequency,worst_of,train,Annual,51,0.007836508912108174
+observation_frequency,worst_of,train,M,179,0.02750460971112477
+observation_frequency,worst_of,train,Monthly,196,0.03011677934849416
+observation_frequency,worst_of,train,Q,149,0.022894898586355256
+observation_frequency,worst_of,train,Quarterly,145,0.022280270436385988
+observation_frequency,worst_of,train,Y,45,0.0069145666871542714
+observation_frequency,worst_of,train,anual,47,0.007221880762138906
+observation_frequency,worst_of,train,mensual,209,0.032114320835894286
+observation_frequency,worst_of,train,trimestral,154,0.02366318377381684
+observation_frequency,worst_of,validation,1 month,18,0.017241379310344827
+observation_frequency,worst_of,validation,12M,10,0.009578544061302681
+observation_frequency,worst_of,validation,1D,34,0.032567049808429116
+observation_frequency,worst_of,validation,1M,240,0.22988505747126436
+observation_frequency,worst_of,validation,1Y,81,0.07758620689655173
+observation_frequency,worst_of,validation,2M,88,0.0842911877394636
+observation_frequency,worst_of,validation,3 months,24,0.022988505747126436
+observation_frequency,worst_of,validation,3M,221,0.21168582375478928
+observation_frequency,worst_of,validation,6M,165,0.15804597701149425
+observation_frequency,worst_of,validation,Annual,2,0.0019157088122605363
+observation_frequency,worst_of,validation,M,27,0.02586206896551724
+observation_frequency,worst_of,validation,Monthly,20,0.019157088122605363
+observation_frequency,worst_of,validation,Q,19,0.018199233716475097
+observation_frequency,worst_of,validation,Quarterly,29,0.027777777777777776
+observation_frequency,worst_of,validation,Y,10,0.009578544061302681
+observation_frequency,worst_of,validation,anual,7,0.006704980842911878
+observation_frequency,worst_of,validation,mensual,29,0.027777777777777776
+observation_frequency,worst_of,validation,trimestral,20,0.019157088122605363
+product_type,single,train,Holocron Reverse Convertible,1651,0.5004546832373447
+product_type,single,train,Mandalorian Twin-Win,1648,0.49954531676265534
+product_type,single,validation,Holocron Reverse Convertible,285,0.5337078651685393
+product_type,single,validation,Mandalorian Twin-Win,249,0.46629213483146065
+product_type,worst_of,train,Death Star Phoenix Note,1645,0.2527658266748617
+product_type,worst_of,train,Kessel Run Snowball,1557,0.2392440073755378
+product_type,worst_of,train,Sith Eternal Snowball,1642,0.25230485556238474
+product_type,worst_of,train,Wretched Hive Digital,1664,0.25568531038721576
+product_type,worst_of,validation,Death Star Phoenix Note,245,0.23467432950191572
+product_type,worst_of,validation,Kessel Run Snowball,275,0.26340996168582376
+product_type,worst_of,validation,Sith Eternal Snowball,250,0.23946360153256704
+product_type,worst_of,validation,Wretched Hive Digital,274,0.2624521072796935

@@ -1,0 +1,9 @@
+feature,observation_level,cardinality,rare_categories_lt_20,top_category,top_category_count,target_mean_range
+underlyings,rfq,1450,1256,SITH,302,110.0528880866426
+trader_id,rfq,39,0,TRD-032,327,6.0718846153846115
+sector,underlying,14,0,Gestion patrimonial,1535,21.611495166534034
+underlying,underlying,14,0,JEDI,1535,21.611495166534034
+counterparty,rfq,8,0,Banco de Coruscant,1455,1.4889033534779017
+product_type,rfq,6,0,Wretched Hive Digital,1938,30.428747185477064
+observation_frequency_clean,rfq,6,0,1m,4034,17.673009849285506
+basket_type,rfq,2,0,worst_of,7552,15.683176858207823

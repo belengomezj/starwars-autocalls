@@ -1,0 +1,176 @@
+{
+  "supervised_rows": 11385,
+  "full_dataset_rows": 25000,
+  "requested_date_min": "2016-01-04",
+  "requested_date_max": "2022-12-30",
+  "split_description": "train<=2021, validation=2022, test>=2023",
+  "split_rows": {
+    "train": {
+      "rows": 9807,
+      "pct_total": 86.14,
+      "min_requested_date": "2016-01-04",
+      "max_requested_date": "2021-12-31",
+      "product_types": 6,
+      "basket_types": 2,
+      "target_mean": 39.9385999796064,
+      "target_median": 35.51,
+      "target_std": 22.062279726037946
+    },
+    "validation": {
+      "rows": 1578,
+      "pct_total": 13.86,
+      "min_requested_date": "2022-01-03",
+      "max_requested_date": "2022-12-30",
+      "product_types": 6,
+      "basket_types": 2,
+      "target_mean": 39.175044359949304,
+      "target_median": 34.86,
+      "target_std": 21.568936502370875
+    }
+  },
+  "product_counts": {
+    "Wretched Hive Digital": 1938,
+    "Holocron Reverse Convertible": 1936,
+    "Mandalorian Twin-Win": 1897,
+    "Sith Eternal Snowball": 1892,
+    "Death Star Phoenix Note": 1890,
+    "Kessel Run Snowball": 1832
+  },
+  "basket_type_counts": {
+    "worst_of": 7552,
+    "single": 3833
+  },
+  "underlying_counts": {
+    "JEDI": 1535,
+    "TECH": 1534,
+    "WOOK": 1528,
+    "REBL": 1519,
+    "BSKR": 1505,
+    "SITH": 1497,
+    "HTTX": 1494,
+    "NABO": 1491,
+    "CORL": 1486,
+    "CLNE": 1464,
+    "MNDO": 1463,
+    "KYBR": 1442,
+    "DRC": 1436,
+    "POBK": 1435
+  },
+  "rolling_folds": 5,
+  "segment_viability": [
+    {
+      "segment": "single",
+      "total_rows": 3833,
+      "train_rows": 3299,
+      "validation_rows": 534,
+      "years_present": "2016-2022",
+      "products_present": "Holocron Reverse Convertible, Mandalorian Twin-Win",
+      "underlyings_present": 14,
+      "target_mean": 29.429663448995566,
+      "target_median": 26.9,
+      "target_std": 16.89632537524909,
+      "missing_validation_underlyings_in_train": "",
+      "viability_checks_passed": 6,
+      "viability_checks_total": 6,
+      "is_viable_for_segment_model": true,
+      "recommendation": "viable_to_test"
+    },
+    {
+      "segment": "worst_of",
+      "total_rows": 7552,
+      "train_rows": 6508,
+      "validation_rows": 1044,
+      "years_present": "2016-2022",
+      "products_present": "Death Star Phoenix Note, Kessel Run Snowball, Sith Eternal Snowball, Wretched Hive Digital",
+      "underlyings_present": 14,
+      "target_mean": 45.11284030720339,
+      "target_median": 40.765,
+      "target_std": 22.397980056940327,
+      "missing_validation_underlyings_in_train": "",
+      "viability_checks_passed": 6,
+      "viability_checks_total": 6,
+      "is_viable_for_segment_model": true,
+      "recommendation": "viable_to_test"
+    }
+  ],
+  "product_model_viability": [
+    {
+      "product_type": "Wretched Hive Digital",
+      "total_rows": 1938,
+      "train_rows": 1664,
+      "validation_rows": 274,
+      "years_present": 7,
+      "basket_types": "worst_of",
+      "is_viable_for_product_model": true
+    },
+    {
+      "product_type": "Holocron Reverse Convertible",
+      "total_rows": 1936,
+      "train_rows": 1651,
+      "validation_rows": 285,
+      "years_present": 7,
+      "basket_types": "single",
+      "is_viable_for_product_model": true
+    },
+    {
+      "product_type": "Mandalorian Twin-Win",
+      "total_rows": 1897,
+      "train_rows": 1648,
+      "validation_rows": 249,
+      "years_present": 7,
+      "basket_types": "single",
+      "is_viable_for_product_model": true
+    },
+    {
+      "product_type": "Sith Eternal Snowball",
+      "total_rows": 1892,
+      "train_rows": 1642,
+      "validation_rows": 250,
+      "years_present": 7,
+      "basket_types": "worst_of",
+      "is_viable_for_product_model": true
+    },
+    {
+      "product_type": "Death Star Phoenix Note",
+      "total_rows": 1890,
+      "train_rows": 1645,
+      "validation_rows": 245,
+      "years_present": 7,
+      "basket_types": "worst_of",
+      "is_viable_for_product_model": true
+    },
+    {
+      "product_type": "Kessel Run Snowball",
+      "total_rows": 1832,
+      "train_rows": 1557,
+      "validation_rows": 275,
+      "years_present": 7,
+      "basket_types": "worst_of",
+      "is_viable_for_product_model": true
+    }
+  ],
+  "conclusions": [
+    "El dataset supervisado está razonablemente balanceado por producto; ningún product_type domina de forma extrema.",
+    "La distribución anual es razonablemente repartida para una validación temporal.",
+    "La composición single vs worst_of es {'worst_of': 7552, 'single': 3833}, por lo que el split debe preservar ambos grupos para comparar modelos de forma justa.",
+    "Los splits analizados preservan todos los underlyings observados en train.",
+    "La validación temporal con holdout está justificada porque respeta el orden de requested_date y mantiene el test más reciente fuera de tuning.",
+    "La rolling temporal validation está justificada como prueba de estabilidad: se han auditado 5 folds anuales expansivos.",
+    "Es viable probar un modelo separado para single, pero debe compararse contra el modelo global con el mismo protocolo temporal.",
+    "Es viable probar un modelo separado para worst_of, pero debe compararse contra el modelo global con el mismo protocolo temporal.",
+    "Un modelo por product_type parece viable por volumen mínimo, aunque aumenta complejidad operativa.",
+    "La alternativa más prudente antes de segmentar es mantener un modelo global con variables de interacción estructural como basket_type, basket_size y worst_of_pressure."
+  ],
+  "includes_test": false,
+  "drift_status_counts": {
+    "numeric_drift": {
+      "pass": 7
+    },
+    "categorical_drift": {
+      "pass": 5
+    },
+    "missingness_drift": {
+      "pass": 23
+    }
+  }
+}

@@ -1,0 +1,3 @@
+strategy,selected_for_serving,model_name,feature_block,encoding_strategy,selection_metric,validation_mae,rolling_mae_mean,rolling_mae_max,train_rows,validation_rows
+global,True,catboost_tuned__all_without_noise,all_without_noise,native,validation_mae,3.0831778335806086,3.988620206938176,5.814099595560898,9807,1578
+segmented_by_basket_type,False,single:catboost_tuned__single_core + worst_of:catboost_tuned__worst_of_core,single:single_core + worst_of:worst_of_core,single:native + worst_of:native,validation_mae,3.117044227946478,3.970691726771361,5.735705339588776,9807,1578

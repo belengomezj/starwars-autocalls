@@ -1,0 +1,9 @@
+feature,split,observation_level,unseen_categories,affected_rows,affected_row_share,unseen_category_values
+basket_type,validation,rfq,0,0,0.0,
+counterparty,validation,rfq,0,0,0.0,
+observation_frequency_clean,validation,rfq,0,0,0.0,
+product_type,validation,rfq,0,0,0.0,
+sector,validation,underlying,0,0,0.0,
+trader_id,validation,rfq,0,0,0.0,
+underlying,validation,underlying,0,0,0.0,
+underlyings,validation,rfq,112,119,0.07541191381495564,BSKR|CLNE|REBL|BSKR|DRC|CORL|BSKR|HTTX|SITH|BSKR|HTTX|WOOK|BSKR|NABO|TECH|BSKR|POBK|REBL|BSKR|REBL|CORL|BSKR|REBL|POBK|BSKR|SITH|CORL|BSKR|SITH|KYBR|BSKR|WOOK|HTTX|CLNE|CORL|JEDI|CLNE|JEDI|KYBR|CLNE|JEDI|REBL|CLNE|MNDO|REBL|CLNE|POBK|REBL|CLNE|REBL|CORL|CLNE|SITH|WOOK|CLNE|TECH|SITH|CLNE|WOOK|POBK|CORL|BSKR|TECH|CORL|CLNE|TECH|CORL|DRC|JEDI|CORL|JEDI|BSKR|CORL|JEDI|HTTX

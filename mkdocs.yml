@@ -1,0 +1,66 @@
+site_name: Star Wars Autocalls
+site_description: Documentación del proyecto de regresión de duración de autocallables.
+theme:
+  name: material
+  language: es
+  logo: assets/images/star-wars-logo.png
+  favicon: assets/images/star-wars-logo.png
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: Usar modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: Usar modo claro
+
+nav:
+  - Inicio: index.md
+
+  - Problema:
+      - Definición y objetivos: problem.md
+
+  - Datos:
+      - Dataset: data/overview.md
+      - Análisis exploratorio: data/eda.md
+      - Preprocesamiento: data/preprocessing.md
+
+  - Metodología:
+      - Evaluación: methodology/evaluation.md
+      - Modelos: methodology/models.md
+      - Validación: methodology/validation.md
+
+  - Experimentos:
+      - Baseline: experiments/baseline.md
+      - Comparación de modelos: experiments/model-comparison.md
+      - Ajuste de hiperparámetros: experiments/hyperparameter-tuning.md
+
+  - Resultados:
+      - Modelo final: results/final-model.md
+      - Análisis de errores: results/error-analysis.md
+      - Interpretabilidad: results/interpretability.md
+
+  - Uso:
+      - Instalación: usage/installation.md
+      - Entrenamiento: usage/training.md
+      - Inferencia: usage/inference.md
+
+  - Arquitectura: architecture.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - tables
+
+strict: true

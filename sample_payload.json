@@ -1,0 +1,16 @@
+{
+  "product_type": "Kessel Run Snowball",
+  "underlyings": "KYBR|CORL",
+  "basket_type": "worst_of",
+  "autocall_barrier_pct": 1.0,
+  "protection_barrier_pct": 0.6,
+  "no_call_period_months": 6,
+  "observation_frequency": "1M",
+  "quoted_implied_vol": 0.25,
+  "notional_credits": 250000,
+  "counterparty": "UNKNOWN",
+  "trader_id": "UNKNOWN",
+  "requested_date": "2024-06-28",
+  "start_date": "2024-06-28",
+  "end_date": "2030-06-28"
+}

@@ -1,0 +1,21 @@
+flowchart TB
+    R[rfqs.csv] --> V[Validación de esquema]
+    M[daily_volatility.csv] --> V
+    U[underlyings_reference.csv] --> V
+    V --> F[FeatureBuilder point-in-time]
+    F --> D[Train 2016-2021]
+    F --> L[Validation 2022]
+    F --> H[Test 2023-2024]
+    D --> E[Benchmark, rolling y Optuna]
+    L --> E
+    E --> S[Selección estadística]
+    S --> T[Refit train + validation]
+    D --> T
+    L --> T
+    T --> G[Modelo congelado y checksum]
+    G --> Q[Evaluación final]
+    H --> Q
+    Q --> K[Métricas finales y metadata]
+    G --> P[Serving y API]
+    K --> P
+    P --> O[Predicción, intervalo, OOD y staleness]

@@ -1,0 +1,114 @@
+{
+  "split": "train<=2021, validation=2022, test>=2023",
+  "n_trials_per_model": 25,
+  "candidates": [
+    "catboost_native__all_without_noise",
+    "catboost_native__all_without_commercial",
+    "lightgbm_native__all_without_noise",
+    "hist_gradient_boosting__all_without_noise"
+  ],
+  "data_hashes": {
+    "rfqs_csv_sha256": "cffa349ac26b0604ed0b907b304801af5b8cbbbe9271ec74d0a48905b4a46e02",
+    "daily_volatility_csv_sha256": "1059c5be769524d8de89a373fc603da8e50ec0c30f773d39430bf6d42d4d50a6",
+    "underlyings_reference_csv_sha256": "96a64d9e340251d2620dcccad4c842ef2717cf9e7edae96f9373aff20f3c6fee"
+  },
+  "uv_lock_sha256": "a17b07d4bea68a95ed9023640891a33e55d64de72ace49d2873b3512620970a5",
+  "dependency_versions": {
+    "catboost": "1.2.10",
+    "fastapi": "0.141.1",
+    "lightgbm": "4.7.0",
+    "mlflow": "3.15.1",
+    "numpy": "2.5.2",
+    "optuna": "4.9.0",
+    "pandas": "2.3.3",
+    "pandera": "0.32.1",
+    "scikit-learn": "1.9.0",
+    "structlog": "26.1.0",
+    "uvicorn": "0.52.4",
+    "xgboost": "3.4.1"
+  },
+  "studies": [
+    {
+      "base_model_name": "catboost_native__all_without_noise",
+      "tuned_model_name": "catboost_tuned__all_without_noise",
+      "best_validation_mae": 3.0831778335806086,
+      "refit_validation_metrics": {
+        "mae": 3.0831778335806086,
+        "rmse": 4.436670793857196,
+        "r2": 0.9576618135410665,
+        "median_absolute_error": 2.02738859234314
+      },
+      "n_trials": 22,
+      "best_params": {
+        "iterations": 737,
+        "depth": 6,
+        "learning_rate": 0.07674946188421863,
+        "l2_leaf_reg": 3.8024913874277413,
+        "random_strength": 1.4557129110011542,
+        "bagging_temperature": 0.24830884323481145
+      }
+    },
+    {
+      "base_model_name": "catboost_native__all_without_commercial",
+      "tuned_model_name": "catboost_tuned__all_without_commercial",
+      "best_validation_mae": 3.102194783081594,
+      "refit_validation_metrics": {
+        "mae": 3.102194783081594,
+        "rmse": 4.455101418409395,
+        "r2": 0.957309324010411,
+        "median_absolute_error": 2.080241758408416
+      },
+      "n_trials": 21,
+      "best_params": {
+        "iterations": 882,
+        "depth": 6,
+        "learning_rate": 0.04428255387427315,
+        "l2_leaf_reg": 28.360032199480038,
+        "random_strength": 1.4218586926633265,
+        "bagging_temperature": 0.017270175668650967
+      }
+    },
+    {
+      "base_model_name": "lightgbm_native__all_without_noise",
+      "tuned_model_name": "lightgbm_tuned__all_without_noise",
+      "best_validation_mae": 3.2397716430051022,
+      "refit_validation_metrics": {
+        "mae": 3.2397716430051022,
+        "rmse": 4.716925255398779,
+        "r2": 0.95214406226565,
+        "median_absolute_error": 2.127390350071317
+      },
+      "n_trials": 25,
+      "best_params": {
+        "n_estimators": 884,
+        "learning_rate": 0.035222007263568285,
+        "num_leaves": 100,
+        "min_child_samples": 96,
+        "subsample": 0.7137679211561242,
+        "colsample_bytree": 0.7497458385211739,
+        "reg_alpha": 1.1915248207745566e-06,
+        "reg_lambda": 1.1349404285028033e-05
+      }
+    },
+    {
+      "base_model_name": "hist_gradient_boosting__all_without_noise",
+      "tuned_model_name": "hist_gradient_boosting_tuned__all_without_noise",
+      "best_validation_mae": 3.254305635119158,
+      "refit_validation_metrics": {
+        "mae": 3.254305635119158,
+        "rmse": 4.641575696948942,
+        "r2": 0.9536607802705361,
+        "median_absolute_error": 2.256937111151302
+      },
+      "n_trials": 25,
+      "best_params": {
+        "learning_rate": 0.037360703772718454,
+        "max_iter": 554,
+        "max_leaf_nodes": 46,
+        "min_samples_leaf": 54,
+        "l2_regularization": 1.7836706611484927,
+        "max_bins": 180
+      }
+    }
+  ]
+}

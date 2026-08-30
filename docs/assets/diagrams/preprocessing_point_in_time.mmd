@@ -1,0 +1,27 @@
+flowchart TB
+    R[RFQ] --> V[Validación y parseo de cesta]
+    V --> X[Una fila por ticker de la cesta]
+
+    D[Volatilidad diaria por ticker] --> W[Ventanas históricas 21 y 126 observaciones]
+    W --> J[Join as-of backward por ticker<br/>fecha de mercado <= requested_date]
+    X --> J
+
+    S[Referencia estática por ticker] --> K[Join exacto por ticker]
+    X --> K
+
+    J --> AM[Agregados de mercado por cesta]
+    K --> AE[Agregados estructurales por cesta]
+    V --> C[Features contractuales, producto, cesta y fecha]
+    AM --> F[Matriz de features por RFQ]
+    AE --> F
+    C --> F
+
+    F --> T[Split temporal de RFQs]
+    T --> TR[Train hasta 2021]
+    T --> VA[Validation 2022]
+    T --> TE[Test desde 2023]
+    TR --> P[Fit de encoding y modelo sólo con train]
+    P --> PV[Transformación y selección en validation]
+    VA --> PV
+    P --> PT[Transformación y evaluación final en test]
+    TE --> PT

@@ -1,0 +1,11 @@
+model_name,feature_block,encoding_strategy,estimator_class,split,validation_mae,validation_rmse,validation_r2,validation_median_absolute_error
+catboost_native__all_without_commercial,all_without_commercial,native,CatBoostRegressor,"train<=2021, validation=2022, test>=2023",3.2811108268967955,4.661060353753042,0.9532709131300677,2.227901383335258
+catboost_native__all_without_noise,all_without_noise,native,CatBoostRegressor,"train<=2021, validation=2022, test>=2023",3.268372505572075,4.682800827834667,0.9528339817569232,2.2744924347069277
+hist_gradient_boosting__all_without_commercial,all_without_commercial,ordinal,HistGradientBoostingRegressor,"train<=2021, validation=2022, test>=2023",3.3982626599754533,4.706009015274687,0.9523653091093109,2.526819496045025
+hist_gradient_boosting__all_without_noise,all_without_noise,ordinal,HistGradientBoostingRegressor,"train<=2021, validation=2022, test>=2023",3.3385355389009823,4.636913041598625,0.9537538328468034,2.41631548871854
+hist_gradient_boosting_ablation__all_features,all_features,ordinal,HistGradientBoostingRegressor,"train<=2021, validation=2022, test>=2023",3.3932153249528594,4.7025143385051305,0.9524360297720749,2.478437680227197
+hist_gradient_boosting_ablation__all_without_commercial,all_without_commercial,ordinal,HistGradientBoostingRegressor,"train<=2021, validation=2022, test>=2023",3.4135549647793213,4.721031032735299,0.9520607150307442,2.511928800025686
+hist_gradient_boosting_ablation__all_without_noise,all_without_noise,ordinal,HistGradientBoostingRegressor,"train<=2021, validation=2022, test>=2023",3.363142492199245,4.6639420799161195,0.9532131142391449,2.519240812925796
+lightgbm_native__all_without_commercial,all_without_commercial,native,LGBMRegressor,"train<=2021, validation=2022, test>=2023",3.342252141828702,4.901068037246345,0.9483346584597655,2.2199213561126108
+lightgbm_native__all_without_noise,all_without_noise,native,LGBMRegressor,"train<=2021, validation=2022, test>=2023",3.321532949636649,4.861848655161728,0.9491582240106246,2.2240501849195766
+xgboost_ordinal__all_without_noise,all_without_noise,ordinal,XGBRegressor,"train<=2021, validation=2022, test>=2023",3.4474454383493525,4.794258075744947,0.9505620266952178,2.4724258422851584

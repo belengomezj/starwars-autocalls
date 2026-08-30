@@ -1,0 +1,14 @@
+{
+  "model_name": "catboost_tuned__all_without_noise",
+  "base_model_name": "catboost_native__all_without_noise",
+  "serving_strategy": "global",
+  "validation_mae": 3.0831778335806086,
+  "hyperparameters": {
+    "iterations": 737,
+    "depth": 6,
+    "learning_rate": 0.07674946188421863,
+    "l2_leaf_reg": 3.8024913874277413,
+    "random_strength": 1.4557129110011542,
+    "bagging_temperature": 0.24830884323481145
+  }
+}

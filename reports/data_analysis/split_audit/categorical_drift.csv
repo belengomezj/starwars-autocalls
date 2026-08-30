@@ -1,0 +1,6 @@
+split,feature,train_categories,compared_categories,jensen_shannon_divergence,max_category_share_delta,status
+validation,product_type,6,6,0.0008122840534659366,0.015507081346799317,pass
+validation,basket_type,2,2,3.261152814342775e-06,0.0020106690301526786,pass
+validation,observation_frequency,18,18,0.002903010283958821,0.019096897110428994,pass
+validation,counterparty,8,8,0.0006440689536817421,0.01717191220207806,pass
+validation,trader_id,39,39,0.005224671452457433,0.011892452081833375,pass

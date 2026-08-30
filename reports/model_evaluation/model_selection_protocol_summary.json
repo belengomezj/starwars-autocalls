@@ -1,0 +1,137 @@
+{
+  "created_at_utc": "2026-08-29T12:01:23.760667+00:00",
+  "selection_rule": "primary: statistical significance of the validation-residual bootstrap CI for (global_mae - segmented_mae); ties/non-significant differences default to the simpler 'global' strategy; rolling-fold bootstrap is secondary. The final test holdout is inaccessible to this command.",
+  "selected_strategy": "global",
+  "selected_model_name": "catboost_tuned__all_without_noise",
+  "candidate_source": "tuned",
+  "statistical_comparison": {
+    "method": "Quarter-block percentile bootstrap (5000 resamples, seed=31415) on validation |error| (primary, n=1578) and on per-fold rolling MAE (secondary, n=5 folds). Positive point estimate favors segmented; CI excluding zero is treated as a statistically distinguishable difference at the 5% level.",
+    "validation_block_bootstrap": {
+      "point_estimate_global_minus_segmented_mae": -0.03386639436586991,
+      "ci_95_low": -0.08117941496463787,
+      "ci_95_high": 0.015530360300720858,
+      "n_bootstrap": 5000,
+      "n_observations": 1578,
+      "n_blocks": 4,
+      "block_unit": "requested_quarter",
+      "significant_at_5pct": false
+    },
+    "validation_row_bootstrap_diagnostic": {
+      "point_estimate_global_minus_segmented_mae": -0.03386639436586991,
+      "ci_95_low": -0.1119066071670567,
+      "ci_95_high": 0.043420430072333954,
+      "n_bootstrap": 5000,
+      "n_observations": 1578,
+      "significant_at_5pct": false
+    },
+    "rolling_fold_bootstrap": {
+      "point_estimate_global_minus_segmented_mae": 0.01792848016681514,
+      "ci_95_low": -0.04430621733911044,
+      "ci_95_high": 0.09103124667067419,
+      "n_bootstrap": 5000,
+      "n_observations": 5,
+      "significant_at_5pct": false
+    },
+    "minimum_practical_mae_improvement_months": 0.25,
+    "practically_material": false,
+    "decision_basis": "not_significant_or_not_material_default_to_simpler_model",
+    "preferred_strategy_by_significance": "global"
+  },
+  "comparison_path": "reports/model_evaluation/model_selection_protocol.csv",
+  "candidates": [
+    {
+      "strategy": "global",
+      "selected_for_serving": true,
+      "model_name": "catboost_tuned__all_without_noise",
+      "feature_block": "all_without_noise",
+      "encoding_strategy": "native",
+      "selection_metric": "validation_mae",
+      "validation_mae": 3.0831778335806086,
+      "rolling_mae_mean": 3.988620206938176,
+      "rolling_mae_max": 5.814099595560898,
+      "train_rows": 9807,
+      "validation_rows": 1578
+    },
+    {
+      "strategy": "segmented_by_basket_type",
+      "selected_for_serving": false,
+      "model_name": "single:catboost_tuned__single_core + worst_of:catboost_tuned__worst_of_core",
+      "feature_block": "single:single_core + worst_of:worst_of_core",
+      "encoding_strategy": "single:native + worst_of:native",
+      "selection_metric": "validation_mae",
+      "validation_mae": 3.117044227946478,
+      "rolling_mae_mean": 3.970691726771361,
+      "rolling_mae_max": 5.735705339588776,
+      "train_rows": 9807,
+      "validation_rows": 1578
+    }
+  ],
+  "candidate_details": {
+    "global": {
+      "validation_metrics": {
+        "mae": 3.0831778335806086,
+        "rmse": 4.436670793857196,
+        "r2": 0.9576618135410665,
+        "median_absolute_error": 2.02738859234314
+      },
+      "selection_metric": "validation_mae",
+      "test_usage": "forbidden_during_selection"
+    },
+    "segmented_by_basket_type": {
+      "segments": [
+        {
+          "segment": "single",
+          "model_name": "catboost_tuned__single_core",
+          "feature_block": "single_core",
+          "encoding_strategy": "native",
+          "validation_mae": 3.4613464289452756,
+          "train_rows": 3299,
+          "validation_rows": 534,
+          "validation_metrics": {
+            "mae": 3.4613464289452756,
+            "rmse": 5.251453774826432,
+            "r2": 0.911992119077646,
+            "median_absolute_error": 2.1752211890013773
+          }
+        },
+        {
+          "segment": "worst_of",
+          "model_name": "catboost_tuned__worst_of_core",
+          "feature_block": "worst_of_core",
+          "encoding_strategy": "native",
+          "validation_mae": 2.940935630883875,
+          "train_rows": 6508,
+          "validation_rows": 1044,
+          "validation_metrics": {
+            "mae": 2.940935630883875,
+            "rmse": 4.08618528921179,
+            "r2": 0.9647099105824753,
+            "median_absolute_error": 2.1266202829981804
+          }
+        }
+      ],
+      "selection_metric": "validation_mae",
+      "test_usage": "forbidden_during_selection"
+    }
+  },
+  "data_hashes": {
+    "rfqs_csv_sha256": "cffa349ac26b0604ed0b907b304801af5b8cbbbe9271ec74d0a48905b4a46e02",
+    "daily_volatility_csv_sha256": "1059c5be769524d8de89a373fc603da8e50ec0c30f773d39430bf6d42d4d50a6",
+    "underlyings_reference_csv_sha256": "96a64d9e340251d2620dcccad4c842ef2717cf9e7edae96f9373aff20f3c6fee"
+  },
+  "uv_lock_sha256": "a17b07d4bea68a95ed9023640891a33e55d64de72ace49d2873b3512620970a5",
+  "dependency_versions": {
+    "catboost": "1.2.10",
+    "fastapi": "0.141.1",
+    "lightgbm": "4.7.0",
+    "mlflow": "3.15.1",
+    "numpy": "2.5.2",
+    "optuna": "4.9.0",
+    "pandas": "2.3.3",
+    "pandera": "0.32.1",
+    "scikit-learn": "1.9.0",
+    "structlog": "26.1.0",
+    "uvicorn": "0.52.4",
+    "xgboost": "3.4.1"
+  }
+}

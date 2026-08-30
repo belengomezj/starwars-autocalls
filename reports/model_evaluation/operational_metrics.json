@@ -1,0 +1,9 @@
+{
+  "model_name": "catboost_tuned__all_without_noise",
+  "artifact_bytes": 2408608,
+  "final_fit_seconds": 14.865012922004098,
+  "test_predict_seconds": 0.11476110499643255,
+  "test_rows": 2411,
+  "test_rows_per_second": 21008.860101817147,
+  "total_training_command_seconds": 164.51592207500653
+}

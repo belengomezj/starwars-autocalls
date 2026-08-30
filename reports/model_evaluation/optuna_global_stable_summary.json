@@ -1,0 +1,70 @@
+{
+  "split": "train<=2021, validation=2022, test>=2023",
+  "n_trials_per_model": 20,
+  "candidates": [
+    "catboost_native__global_stable_no_sector",
+    "catboost_native__global_stable_tail"
+  ],
+  "data_hashes": {
+    "rfqs_csv_sha256": "cffa349ac26b0604ed0b907b304801af5b8cbbbe9271ec74d0a48905b4a46e02",
+    "daily_volatility_csv_sha256": "1059c5be769524d8de89a373fc603da8e50ec0c30f773d39430bf6d42d4d50a6",
+    "underlyings_reference_csv_sha256": "96a64d9e340251d2620dcccad4c842ef2717cf9e7edae96f9373aff20f3c6fee"
+  },
+  "uv_lock_sha256": "a17b07d4bea68a95ed9023640891a33e55d64de72ace49d2873b3512620970a5",
+  "dependency_versions": {
+    "catboost": "1.2.10",
+    "fastapi": "0.141.1",
+    "lightgbm": "4.7.0",
+    "mlflow": "3.15.1",
+    "numpy": "2.5.2",
+    "optuna": "4.9.0",
+    "pandas": "2.3.3",
+    "pandera": "0.32.1",
+    "scikit-learn": "1.9.0",
+    "structlog": "26.1.0",
+    "uvicorn": "0.52.4",
+    "xgboost": "3.4.1"
+  },
+  "studies": [
+    {
+      "base_model_name": "catboost_native__global_stable_no_sector",
+      "tuned_model_name": "catboost_tuned__global_stable_no_sector",
+      "best_validation_mae": 3.351809159450353,
+      "refit_validation_metrics": {
+        "mae": 3.351809159450353,
+        "rmse": 4.802011908116413,
+        "r2": 0.9504019836863843,
+        "median_absolute_error": 2.2787542678547545
+      },
+      "n_trials": 19,
+      "best_params": {
+        "iterations": 803,
+        "depth": 8,
+        "learning_rate": 0.07184164278032562,
+        "l2_leaf_reg": 19.19891723774782,
+        "random_strength": 0.06017168298491882,
+        "bagging_temperature": 0.7585021078504457
+      }
+    },
+    {
+      "base_model_name": "catboost_native__global_stable_tail",
+      "tuned_model_name": "catboost_tuned__global_stable_tail",
+      "best_validation_mae": 3.3797271345978324,
+      "refit_validation_metrics": {
+        "mae": 3.3797271345978324,
+        "rmse": 4.9543386779076775,
+        "r2": 0.9472054339052085,
+        "median_absolute_error": 2.2013651109987933
+      },
+      "n_trials": 20,
+      "best_params": {
+        "iterations": 797,
+        "depth": 7,
+        "learning_rate": 0.02847958663980858,
+        "l2_leaf_reg": 9.709116253899525,
+        "random_strength": 0.7707764982022827,
+        "bagging_temperature": 0.146765565072475
+      }
+    }
+  ]
+}

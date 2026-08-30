@@ -1,0 +1,24 @@
+sequenceDiagram
+    participant S as Streamlit :8501
+    participant A as FastAPI :8000
+    participant C as CLI de entrenamiento
+    participant M as MLflow :5050
+    participant V as volumen mlflow_data
+    participant AR as artifacts/
+    participant RP as reports/
+    participant D as MkDocs :8001
+
+    S->>A: POST /predict-batch
+    A->>AR: lee el modelo
+    AR-->>A: modelo y metadata
+    A-->>S: predicciones en orden
+
+    S->>C: lanza train
+    C->>M: registra el run
+    M->>V: persiste tracking y artefactos MLflow
+    C->>AR: escribe modelo, checksum y métricas
+    C->>RP: escribe informes
+    S->>AR: lee las métricas
+    D->>RP: lee informes para publicarlos
+
+    Note over A,M: FastAPI no se conecta a MLflow

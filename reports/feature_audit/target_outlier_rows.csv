@@ -1,0 +1,216 @@
+segment,split,requested_date,product_type,basket_type,observation_frequency,underlyings,target,segment_high_outlier_threshold
+single,validation,2022-05-19,Mandalorian Twin-Win,single,1M,NABO,96.94,71.4
+single,train,2016-01-20,Mandalorian Twin-Win,single,3M,JEDI,96.78,71.4
+single,train,2017-11-14,Mandalorian Twin-Win,single,1Y,JEDI,96.39,71.4
+single,validation,2022-04-01,Mandalorian Twin-Win,single,3M,JEDI,95.28,71.4
+single,train,2017-05-01,Mandalorian Twin-Win,single,1M,NABO,93.19,71.4
+single,validation,2022-02-21,Holocron Reverse Convertible,single,6M,NABO,92.07,71.4
+single,train,2019-05-07,Mandalorian Twin-Win,single,6M,JEDI,91.44,71.4
+single,train,2021-02-18,Mandalorian Twin-Win,single,Q,CLNE,91.38,71.4
+single,train,2017-01-10,Mandalorian Twin-Win,single,1Y,JEDI,90.68,71.4
+single,validation,2022-05-25,Holocron Reverse Convertible,single,Monthly,NABO,89.76,71.4
+single,train,2016-06-13,Holocron Reverse Convertible,single,1Y,JEDI,88.99,71.4
+single,train,2019-11-05,Mandalorian Twin-Win,single,1M,JEDI,87.72,71.4
+single,validation,2022-03-04,Mandalorian Twin-Win,single,M,NABO,87.54,71.4
+single,train,2021-04-19,Mandalorian Twin-Win,single,1 month,JEDI,87.1,71.4
+single,train,2019-09-02,Mandalorian Twin-Win,single,3M,JEDI,85.11,71.4
+single,train,2017-10-03,Holocron Reverse Convertible,single,M,NABO,85.11,71.4
+single,train,2016-08-24,Holocron Reverse Convertible,single,3M,NABO,85.06,71.4
+single,train,2021-07-15,Holocron Reverse Convertible,single,Quarterly,CLNE,85.04,71.4
+single,train,2019-03-04,Holocron Reverse Convertible,single,1Y,JEDI,84.79,71.4
+single,train,2020-08-24,Mandalorian Twin-Win,single,6M,JEDI,84.71,71.4
+single,train,2017-01-10,Holocron Reverse Convertible,single,3M,JEDI,84.03,71.4
+single,train,2019-08-08,Holocron Reverse Convertible,single,Monthly,NABO,84.02,71.4
+single,train,2020-04-22,Mandalorian Twin-Win,single,1 month,JEDI,83.86,71.4
+single,train,2019-10-29,Holocron Reverse Convertible,single,1M,JEDI,83.77,71.4
+single,train,2019-01-18,Mandalorian Twin-Win,single,1Y,NABO,83.7,71.4
+single,train,2019-09-24,Mandalorian Twin-Win,single,6M,NABO,82.89,71.4
+single,train,2017-09-22,Mandalorian Twin-Win,single,6M,NABO,81.87,71.4
+single,validation,2022-10-06,Holocron Reverse Convertible,single,3M,CLNE,81.44,71.4
+single,validation,2022-09-06,Mandalorian Twin-Win,single,Annual,NABO,81.13,71.4
+single,train,2021-02-05,Mandalorian Twin-Win,single,1M,NABO,81.09,71.4
+single,train,2019-01-03,Mandalorian Twin-Win,single,1M,NABO,80.75,71.4
+single,train,2020-06-09,Mandalorian Twin-Win,single,1M,JEDI,80.74,71.4
+single,train,2016-04-06,Mandalorian Twin-Win,single,1M,JEDI,80.49,71.4
+single,train,2016-07-28,Holocron Reverse Convertible,single,2M,CLNE,80.46,71.4
+single,validation,2022-11-30,Holocron Reverse Convertible,single,6M,JEDI,80.2,71.4
+single,train,2017-03-02,Mandalorian Twin-Win,single,1Y,JEDI,80.16,71.4
+single,train,2017-09-18,Holocron Reverse Convertible,single,1 month,NABO,80.13,71.4
+single,train,2017-02-14,Mandalorian Twin-Win,single,3M,JEDI,80.12,71.4
+single,validation,2022-04-28,Mandalorian Twin-Win,single,6M,NABO,80.09,71.4
+single,train,2016-10-17,Holocron Reverse Convertible,single,2M,NABO,79.48,71.4
+single,train,2021-12-17,Holocron Reverse Convertible,single,2M,NABO,79.46,71.4
+single,train,2017-03-31,Mandalorian Twin-Win,single,6M,NABO,78.93,71.4
+single,train,2016-03-04,Holocron Reverse Convertible,single,6M,NABO,78.81,71.4
+single,train,2018-01-09,Holocron Reverse Convertible,single,6M,NABO,78.8,71.4
+single,validation,2022-01-31,Holocron Reverse Convertible,single,2M,NABO,78.66,71.4
+single,train,2021-05-14,Mandalorian Twin-Win,single,2M,CLNE,78.6,71.4
+single,validation,2022-09-13,Mandalorian Twin-Win,single,1Y,JEDI,78.2,71.4
+single,train,2016-10-27,Holocron Reverse Convertible,single,1Y,CLNE,78.07,71.4
+single,train,2019-02-20,Mandalorian Twin-Win,single,3M,JEDI,77.98,71.4
+single,train,2019-02-12,Mandalorian Twin-Win,single,2M,CLNE,77.84,71.4
+single,train,2016-08-25,Mandalorian Twin-Win,single,2M,JEDI,77.64,71.4
+single,train,2016-12-27,Holocron Reverse Convertible,single,3M,NABO,77.48,71.4
+single,train,2019-01-28,Holocron Reverse Convertible,single,1Y,NABO,77.22,71.4
+single,train,2016-11-17,Holocron Reverse Convertible,single,2M,JEDI,77.15,71.4
+single,train,2017-03-08,Mandalorian Twin-Win,single,1M,NABO,77.1,71.4
+single,train,2017-12-08,Holocron Reverse Convertible,single,1Y,NABO,77.1,71.4
+single,train,2017-10-24,Mandalorian Twin-Win,single,3M,JEDI,77.09,71.4
+single,train,2017-01-26,Mandalorian Twin-Win,single,6M,CLNE,77.05,71.4
+single,train,2019-11-01,Mandalorian Twin-Win,single,1M,CLNE,76.66,71.4
+single,train,2019-05-24,Holocron Reverse Convertible,single,1Y,JEDI,76.59,71.4
+single,train,2019-07-30,Holocron Reverse Convertible,single,3M,NABO,76.48,71.4
+single,validation,2022-02-09,Holocron Reverse Convertible,single,3M,NABO,76.23,71.4
+single,train,2016-05-20,Mandalorian Twin-Win,single,3M,CLNE,76.15,71.4
+single,train,2016-10-17,Holocron Reverse Convertible,single,mensual,JEDI,75.81,71.4
+single,train,2018-02-01,Holocron Reverse Convertible,single,3M,CLNE,75.78,71.4
+single,train,2020-09-18,Holocron Reverse Convertible,single,3M,CLNE,75.72,71.4
+single,train,2019-06-24,Holocron Reverse Convertible,single,mensual,NABO,75.64,71.4
+single,train,2019-02-20,Holocron Reverse Convertible,single,1Y,NABO,75.54,71.4
+single,validation,2022-06-02,Holocron Reverse Convertible,single,1M,CLNE,75.51,71.4
+single,train,2021-05-21,Mandalorian Twin-Win,single,1M,NABO,75.48,71.4
+single,train,2016-10-31,Mandalorian Twin-Win,single,1Y,JEDI,75.27,71.4
+single,train,2021-03-19,Mandalorian Twin-Win,single,2M,JEDI,74.99,71.4
+single,train,2020-12-03,Holocron Reverse Convertible,single,1Y,NABO,74.6,71.4
+single,train,2021-03-12,Holocron Reverse Convertible,single,6M,CLNE,74.41,71.4
+single,train,2017-03-13,Holocron Reverse Convertible,single,1M,JEDI,74.16,71.4
+single,train,2016-01-22,Mandalorian Twin-Win,single,12M,NABO,74.07,71.4
+single,train,2019-08-08,Mandalorian Twin-Win,single,Q,JEDI,74.06,71.4
+single,train,2019-11-18,Holocron Reverse Convertible,single,Monthly,CLNE,73.89,71.4
+single,validation,2022-10-21,Holocron Reverse Convertible,single,6M,JEDI,73.75,71.4
+single,train,2020-08-28,Holocron Reverse Convertible,single,3M,NABO,73.7,71.4
+single,train,2021-03-05,Mandalorian Twin-Win,single,3M,CLNE,73.57,71.4
+single,validation,2022-04-28,Holocron Reverse Convertible,single,3M,CLNE,73.57,71.4
+single,train,2020-05-04,Mandalorian Twin-Win,single,3M,JEDI,73.41,71.4
+single,train,2021-05-05,Holocron Reverse Convertible,single,12M,JEDI,73.21,71.4
+single,train,2017-11-13,Mandalorian Twin-Win,single,1M,JEDI,73.11,71.4
+single,train,2019-01-04,Holocron Reverse Convertible,single,3M,JEDI,73.09,71.4
+single,validation,2022-02-21,Holocron Reverse Convertible,single,6M,JEDI,73.08,71.4
+single,validation,2022-03-18,Mandalorian Twin-Win,single,1M,JEDI,72.94,71.4
+single,train,2020-08-12,Holocron Reverse Convertible,single,6M,NABO,72.85,71.4
+single,validation,2022-04-01,Mandalorian Twin-Win,single,1Y,NABO,72.76,71.4
+single,train,2016-08-09,Holocron Reverse Convertible,single,3M,JEDI,72.71,71.4
+single,train,2019-05-06,Mandalorian Twin-Win,single,2M,JEDI,72.53,71.4
+single,train,2019-10-03,Holocron Reverse Convertible,single,1M,CLNE,72.41,71.4
+single,train,2019-04-01,Mandalorian Twin-Win,single,1M,NABO,72.37,71.4
+single,train,2021-06-04,Mandalorian Twin-Win,single,3M,JEDI,72.31,71.4
+single,train,2021-10-05,Mandalorian Twin-Win,single,6M,JEDI,72.21,71.4
+single,validation,2022-07-28,Mandalorian Twin-Win,single,1Y,NABO,72.01,71.4
+single,validation,2022-07-01,Mandalorian Twin-Win,single,6M,JEDI,71.59,71.4
+single,train,2019-09-03,Holocron Reverse Convertible,single,1Y,NABO,71.54,71.4
+single,train,2020-07-09,Mandalorian Twin-Win,single,1M,NABO,71.41,71.4
+worst_of,train,2018-12-25,Wretched Hive Digital,worst_of,6M,SITH|HTTX,127.71,103.4725
+worst_of,train,2017-04-04,Wretched Hive Digital,worst_of,2M,HTTX|JEDI,126.6,103.4725
+worst_of,train,2018-06-18,Wretched Hive Digital,worst_of,3 months,CLNE|HTTX,125.48,103.4725
+worst_of,train,2019-04-04,Wretched Hive Digital,worst_of,3M,CLNE|HTTX,123.18,103.4725
+worst_of,train,2016-10-06,Wretched Hive Digital,worst_of,6M,HTTX|DRC,123.02,103.4725
+worst_of,train,2019-11-15,Wretched Hive Digital,worst_of,1M,SITH|HTTX,122.4,103.4725
+worst_of,train,2017-06-06,Wretched Hive Digital,worst_of,1Y,POBK|HTTX,121.52,103.4725
+worst_of,train,2017-05-15,Wretched Hive Digital,worst_of,Q,HTTX|DRC,121.16,103.4725
+worst_of,train,2017-06-20,Sith Eternal Snowball,worst_of,6M,DRC|HTTX|BSKR,119.39,103.4725
+worst_of,train,2016-02-02,Wretched Hive Digital,worst_of,3M,WOOK|HTTX,119.37,103.4725
+worst_of,train,2021-01-27,Wretched Hive Digital,worst_of,3M,HTTX|NABO,118.85,103.4725
+worst_of,train,2021-08-05,Wretched Hive Digital,worst_of,1Y,HTTX|CLNE,118.67,103.4725
+worst_of,validation,2022-12-01,Sith Eternal Snowball,worst_of,3M,CORL|TECH|HTTX,118.15,103.4725
+worst_of,train,2021-08-12,Wretched Hive Digital,worst_of,2M,CORL|HTTX,118.04,103.4725
+worst_of,train,2021-02-05,Wretched Hive Digital,worst_of,1M,CLNE|KYBR,117.59,103.4725
+worst_of,validation,2022-01-06,Kessel Run Snowball,worst_of,3M,KYBR|HTTX,117.51,103.4725
+worst_of,train,2018-07-31,Sith Eternal Snowball,worst_of,2M,TECH|HTTX|JEDI,117.36,103.4725
+worst_of,train,2021-12-30,Sith Eternal Snowball,worst_of,2M,BSKR|HTTX|DRC,116.73,103.4725
+worst_of,train,2017-10-18,Wretched Hive Digital,worst_of,2M,JEDI|HTTX,116.29,103.4725
+worst_of,train,2020-02-11,Sith Eternal Snowball,worst_of,6M,POBK|WOOK|BSKR,115.69,103.4725
+worst_of,train,2021-03-03,Wretched Hive Digital,worst_of,M,HTTX|MNDO,115.64,103.4725
+worst_of,train,2021-02-26,Wretched Hive Digital,worst_of,3M,TECH|NABO,115.52,103.4725
+worst_of,train,2016-03-03,Wretched Hive Digital,worst_of,1M,BSKR|HTTX,115.49,103.4725
+worst_of,train,2017-03-27,Sith Eternal Snowball,worst_of,1Y,HTTX|NABO|WOOK,115.43,103.4725
+worst_of,validation,2022-04-12,Sith Eternal Snowball,worst_of,Q,BSKR|HTTX|NABO,114.99,103.4725
+worst_of,train,2021-04-07,Sith Eternal Snowball,worst_of,1Y,CORL|HTTX|SITH,114.4,103.4725
+worst_of,train,2020-07-14,Wretched Hive Digital,worst_of,1Y,CLNE|TECH,114.2,103.4725
+worst_of,validation,2022-01-28,Wretched Hive Digital,worst_of,mensual,JEDI|HTTX,114.1,103.4725
+worst_of,train,2021-02-16,Wretched Hive Digital,worst_of,1M,BSKR|HTTX,113.71,103.4725
+worst_of,train,2019-06-10,Wretched Hive Digital,worst_of,3 months,TECH|HTTX,112.9,103.4725
+worst_of,train,2016-07-22,Wretched Hive Digital,worst_of,Annual,MNDO|CLNE,112.58,103.4725
+worst_of,train,2019-05-22,Wretched Hive Digital,worst_of,1M,MNDO|HTTX,112.44,103.4725
+worst_of,train,2017-08-04,Wretched Hive Digital,worst_of,1M,DRC|HTTX,112.07,103.4725
+worst_of,train,2021-10-21,Wretched Hive Digital,worst_of,2M,KYBR|CORL,111.97,103.4725
+worst_of,train,2019-03-01,Wretched Hive Digital,worst_of,3M,HTTX|POBK,111.77,103.4725
+worst_of,train,2019-11-13,Wretched Hive Digital,worst_of,6M,HTTX|TECH,111.63,103.4725
+worst_of,validation,2022-05-16,Wretched Hive Digital,worst_of,2M,HTTX|BSKR,111.58,103.4725
+worst_of,validation,2022-04-19,Kessel Run Snowball,worst_of,6M,HTTX|MNDO,111.47,103.4725
+worst_of,train,2021-06-25,Wretched Hive Digital,worst_of,1M,HTTX|NABO,111.42,103.4725
+worst_of,train,2020-07-28,Sith Eternal Snowball,worst_of,3 months,CORL|HTTX|DRC,111.23,103.4725
+worst_of,train,2018-10-26,Wretched Hive Digital,worst_of,Monthly,JEDI|HTTX,111.14,103.4725
+worst_of,train,2021-03-02,Wretched Hive Digital,worst_of,1M,NABO|JEDI,111.09,103.4725
+worst_of,train,2018-07-30,Sith Eternal Snowball,worst_of,3M,POBK|MNDO|HTTX,110.94,103.4725
+worst_of,train,2017-08-28,Wretched Hive Digital,worst_of,6M,BSKR|JEDI,110.68,103.4725
+worst_of,train,2018-10-11,Wretched Hive Digital,worst_of,trimestral,NABO|KYBR,110.62,103.4725
+worst_of,validation,2022-12-13,Sith Eternal Snowball,worst_of,1Y,BSKR|WOOK|HTTX,110.52,103.4725
+worst_of,train,2021-06-17,Wretched Hive Digital,worst_of,1M,HTTX|DRC,110.4,103.4725
+worst_of,train,2020-07-10,Wretched Hive Digital,worst_of,2M,CLNE|DRC,110.31,103.4725
+worst_of,train,2016-06-03,Sith Eternal Snowball,worst_of,1M,TECH|HTTX|MNDO,110.3,103.4725
+worst_of,train,2018-12-31,Death Star Phoenix Note,worst_of,6M,HTTX|BSKR,110.04,103.4725
+worst_of,train,2019-04-22,Wretched Hive Digital,worst_of,Y,DRC|JEDI,109.77,103.4725
+worst_of,train,2016-10-21,Wretched Hive Digital,worst_of,2M,JEDI|MNDO,109.65,103.4725
+worst_of,train,2019-04-15,Wretched Hive Digital,worst_of,mensual,SITH|NABO,109.58,103.4725
+worst_of,train,2021-07-12,Wretched Hive Digital,worst_of,Quarterly,NABO|KYBR,109.53,103.4725
+worst_of,validation,2022-10-26,Wretched Hive Digital,worst_of,1Y,CORL|JEDI,109.51,103.4725
+worst_of,train,2021-11-05,Wretched Hive Digital,worst_of,1M,HTTX|MNDO,109.14,103.4725
+worst_of,train,2019-08-30,Wretched Hive Digital,worst_of,3 months,MNDO|JEDI,109.14,103.4725
+worst_of,train,2019-04-23,Wretched Hive Digital,worst_of,6M,KYBR|CLNE,109.04,103.4725
+worst_of,train,2021-07-01,Kessel Run Snowball,worst_of,3M,JEDI|HTTX,109.04,103.4725
+worst_of,train,2020-11-17,Wretched Hive Digital,worst_of,3M,JEDI|HTTX,108.77,103.4725
+worst_of,train,2020-03-02,Wretched Hive Digital,worst_of,trimestral,HTTX|BSKR,108.72,103.4725
+worst_of,train,2016-12-02,Wretched Hive Digital,worst_of,1D,HTTX|JEDI,108.56,103.4725
+worst_of,train,2017-01-13,Kessel Run Snowball,worst_of,3M,HTTX|CLNE,108.54,103.4725
+worst_of,train,2016-04-13,Kessel Run Snowball,worst_of,M,TECH|HTTX,108.34,103.4725
+worst_of,train,2019-02-18,Sith Eternal Snowball,worst_of,Annual,SITH|WOOK|HTTX,108.32,103.4725
+worst_of,train,2016-08-24,Kessel Run Snowball,worst_of,1M,HTTX|MNDO,108.15,103.4725
+worst_of,train,2020-09-25,Wretched Hive Digital,worst_of,3M,CORL|NABO,107.98,103.4725
+worst_of,train,2016-02-16,Sith Eternal Snowball,worst_of,trimestral,JEDI|KYBR|HTTX,107.97,103.4725
+worst_of,train,2021-05-28,Death Star Phoenix Note,worst_of,3 months,HTTX|CORL,107.91,103.4725
+worst_of,train,2019-08-19,Wretched Hive Digital,worst_of,1D,HTTX|POBK,107.89,103.4725
+worst_of,train,2018-12-31,Wretched Hive Digital,worst_of,3M,WOOK|BSKR,107.79,103.4725
+worst_of,validation,2022-09-26,Wretched Hive Digital,worst_of,3M,NABO|WOOK,107.71,103.4725
+worst_of,train,2016-01-12,Kessel Run Snowball,worst_of,Q,CORL|HTTX,107.16,103.4725
+worst_of,train,2017-11-07,Kessel Run Snowball,worst_of,1M,HTTX|SITH,106.97,103.4725
+worst_of,train,2021-07-05,Wretched Hive Digital,worst_of,1Y,HTTX|CLNE,106.89,103.4725
+worst_of,validation,2022-07-26,Sith Eternal Snowball,worst_of,2M,HTTX|POBK|NABO,106.86,103.4725
+worst_of,train,2017-05-10,Kessel Run Snowball,worst_of,3M,CORL|HTTX,106.84,103.4725
+worst_of,train,2017-02-20,Wretched Hive Digital,worst_of,3M,HTTX|WOOK,106.37,103.4725
+worst_of,train,2019-10-08,Kessel Run Snowball,worst_of,2M,HTTX|BSKR,106.37,103.4725
+worst_of,train,2016-12-06,Death Star Phoenix Note,worst_of,3M,WOOK|HTTX,106.37,103.4725
+worst_of,validation,2022-09-19,Sith Eternal Snowball,worst_of,1Y,WOOK|HTTX|REBL,106.3,103.4725
+worst_of,train,2021-07-22,Wretched Hive Digital,worst_of,mensual,WOOK|NABO,106.21,103.4725
+worst_of,train,2017-05-05,Wretched Hive Digital,worst_of,M,BSKR|NABO,106.01,103.4725
+worst_of,train,2017-03-10,Sith Eternal Snowball,worst_of,Quarterly,HTTX|KYBR|CORL,105.87,103.4725
+worst_of,validation,2022-12-23,Wretched Hive Digital,worst_of,6M,HTTX|POBK,105.86,103.4725
+worst_of,train,2018-11-21,Sith Eternal Snowball,worst_of,2M,HTTX|SITH|NABO,105.84,103.4725
+worst_of,train,2017-05-15,Wretched Hive Digital,worst_of,M,KYBR|HTTX,105.84,103.4725
+worst_of,train,2021-05-04,Wretched Hive Digital,worst_of,6M,KYBR|HTTX,105.7,103.4725
+worst_of,train,2017-10-02,Kessel Run Snowball,worst_of,12M,HTTX|CLNE,105.62,103.4725
+worst_of,validation,2022-04-26,Sith Eternal Snowball,worst_of,1M,HTTX|SITH|TECH,105.61,103.4725
+worst_of,train,2016-12-12,Sith Eternal Snowball,worst_of,3M,HTTX|WOOK|CORL,105.6,103.4725
+worst_of,train,2018-11-16,Wretched Hive Digital,worst_of,1M,HTTX|NABO,105.52,103.4725
+worst_of,train,2018-10-31,Wretched Hive Digital,worst_of,2M,HTTX|TECH,105.32,103.4725
+worst_of,train,2016-09-20,Wretched Hive Digital,worst_of,1 month,CLNE|HTTX,105.32,103.4725
+worst_of,train,2019-06-25,Death Star Phoenix Note,worst_of,6M,NABO|HTTX,105.21,103.4725
+worst_of,validation,2022-12-29,Sith Eternal Snowball,worst_of,1Y,HTTX|POBK|REBL,105.19,103.4725
+worst_of,train,2018-11-12,Sith Eternal Snowball,worst_of,1D,TECH|HTTX|POBK,105.11,103.4725
+worst_of,train,2020-08-07,Wretched Hive Digital,worst_of,6M,HTTX|SITH,105.01,103.4725
+worst_of,train,2019-08-23,Sith Eternal Snowball,worst_of,3M,REBL|WOOK|HTTX,104.93,103.4725
+worst_of,train,2019-12-19,Sith Eternal Snowball,worst_of,3M,HTTX|NABO|CORL,104.9,103.4725
+worst_of,train,2021-07-12,Sith Eternal Snowball,worst_of,3M,TECH|BSKR|HTTX,104.89,103.4725
+worst_of,train,2019-02-27,Sith Eternal Snowball,worst_of,3M,HTTX|BSKR|NABO,104.86,103.4725
+worst_of,train,2020-05-26,Wretched Hive Digital,worst_of,3M,JEDI|WOOK,104.71,103.4725
+worst_of,validation,2022-05-27,Sith Eternal Snowball,worst_of,anual,WOOK|NABO|MNDO,104.6,103.4725
+worst_of,train,2021-11-03,Wretched Hive Digital,worst_of,3M,CLNE|CORL,104.45,103.4725
+worst_of,train,2017-08-14,Kessel Run Snowball,worst_of,1M,HTTX|NABO,104.39,103.4725
+worst_of,train,2019-06-26,Wretched Hive Digital,worst_of,6M,POBK|KYBR,104.36,103.4725
+worst_of,train,2017-02-03,Sith Eternal Snowball,worst_of,2M,POBK|HTTX|SITH,104.33,103.4725
+worst_of,train,2016-06-07,Wretched Hive Digital,worst_of,trimestral,JEDI|MNDO,104.16,103.4725
+worst_of,train,2017-09-01,Kessel Run Snowball,worst_of,3 months,HTTX|CLNE,104.14,103.4725
+worst_of,train,2020-04-02,Wretched Hive Digital,worst_of,Annual,BSKR|CLNE,104.13,103.4725
+worst_of,train,2021-10-07,Sith Eternal Snowball,worst_of,3M,POBK|WOOK|HTTX,103.97,103.4725
+worst_of,validation,2022-03-30,Wretched Hive Digital,worst_of,1M,HTTX|CLNE,103.87,103.4725
+worst_of,train,2020-08-04,Wretched Hive Digital,worst_of,1M,CORL|JEDI,103.83,103.4725
+worst_of,validation,2022-06-17,Wretched Hive Digital,worst_of,1Y,HTTX|DRC,103.5,103.4725

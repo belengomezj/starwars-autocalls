@@ -1,0 +1,99 @@
+name: starwars-autocalls
+
+services:
+  mlflow:
+    build:
+      context: .
+      target: mlflow
+    command:
+      - .venv/bin/mlflow
+      - server
+      - --backend-store-uri
+      - sqlite:////mlflow/mlflow.db
+      - --serve-artifacts
+      - --artifacts-destination
+      - /mlflow/artifacts
+      - --host
+      - 0.0.0.0
+      - --port
+      - "5000"
+      - --workers
+      - "1"
+      - --allowed-hosts
+      - mlflow,mlflow:5000,localhost,localhost:5000,localhost:${MLFLOW_PORT:-5050},127.0.0.1,127.0.0.1:5000,127.0.0.1:${MLFLOW_PORT:-5050}
+    ports:
+      - "${MLFLOW_PORT:-5050}:5000"
+    volumes:
+      - mlflow_data:/mlflow
+    healthcheck:
+      test:
+        - CMD
+        - .venv/bin/python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://127.0.0.1:5000/health', timeout=3)
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    init: true
+
+  api:
+    build:
+      context: .
+      target: api
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      STARWARS_AUTOCALLS_PROJECT_ROOT: /app
+    ports:
+      - "${API_PORT:-8000}:8000"
+    volumes:
+      - ./artifacts:/app/artifacts:ro
+      - ./data/raw:/app/data/raw:ro
+    healthcheck:
+      test:
+        - CMD
+        - .venv/bin/python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready', timeout=3)
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 15s
+    init: true
+
+  streamlit:
+    build:
+      context: .
+      target: demo
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      STARWARS_AUTOCALLS_API_URL: http://api:8000
+      STARWARS_AUTOCALLS_PROJECT_ROOT: /app
+      STREAMLIT_BROWSER_GATHER_USAGE_STATS: "false"
+    ports:
+      - "${STREAMLIT_PORT:-8501}:8501"
+    volumes:
+      - ./artifacts:/app/artifacts
+      - ./data/raw:/app/data/raw:ro
+      - ./reports:/app/reports
+    depends_on:
+      api:
+        condition: service_healthy
+      mlflow:
+        condition: service_healthy
+    init: true
+
+  docs:
+    build:
+      context: .
+      target: docs
+    ports:
+      - "${DOCS_PORT:-8001}:8000"
+    volumes:
+      - ./docs:/app/docs:ro
+      - ./mkdocs.yml:/app/mkdocs.yml:ro
+      - ./reports:/app/reports:ro
+    init: true
+
+volumes:
+  mlflow_data:

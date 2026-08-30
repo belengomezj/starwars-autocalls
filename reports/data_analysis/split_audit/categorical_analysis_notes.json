@@ -1,0 +1,7 @@
+{
+  "interpretation": [
+    "Counterparty and trader_id are included in the study but excluded from the default final feature block to reduce memorization risk.",
+    "Underlyings are decomposed into basket-size, sector, structural volatility, and as-of realized volatility features instead of using raw basket strings as the main representation.",
+    "One-hot and ordinal encoding are compared in benchmark results; optional native categorical libraries are used only if installed."
+  ]
+}
